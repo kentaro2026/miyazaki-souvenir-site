@@ -7,381 +7,282 @@
 <title>宮崎市内＆宮崎空港｜お土産リスト</title>
 <style>
 :root{
-  --bg:#eef2f3; --paper:#fff; --ink:#142433; --muted:#667582;
-  --navy:#18384f; --navy2:#28566f; --gold:#aa8a56; --sand:#f5efe5;
-  --green:#45685b; --line:#dfe6ea; --soft:#f7f9fa; --red:#8c4f4f;
-  --shadow:0 18px 55px rgba(25,48,64,.10);
+  --bg:#eef2f3;--paper:#fff;--ink:#142433;--muted:#687681;
+  --navy:#18384f;--navy2:#28566f;--gold:#a98955;--sand:#f5efe5;
+  --line:#dfe6ea;--soft:#f7f9fa;--red:#915454;--green:#48675c;
+  --shadow:0 20px 58px rgba(25,48,64,.10)
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;background:var(--bg)}
-body{
-  margin:0;background:var(--bg);color:var(--ink);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic UI","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
-}
-.page{max-width:1080px;margin:26px auto;background:var(--paper);box-shadow:var(--shadow)}
-.hero{
-  padding:38px 40px 32px;border-bottom:1px solid var(--line);
-  background:
-    radial-gradient(circle at 90% 12%,rgba(170,138,86,.14),transparent 25%),
-    linear-gradient(135deg,#fff 0%,#fbfcfc 65%,#f1f5f6 100%);
-}
+*{box-sizing:border-box} html{background:var(--bg);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic UI","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif}
+.page{max-width:1100px;margin:28px auto;background:var(--paper);box-shadow:var(--shadow)}
+.hero{padding:40px 42px 34px;border-bottom:1px solid var(--line);
+background:radial-gradient(circle at 88% 15%,rgba(169,137,85,.13),transparent 28%),linear-gradient(135deg,#fff 0%,#fbfcfc 65%,#f1f5f6 100%)}
 .eyebrow{font-size:10px;letter-spacing:.2em;font-weight:900;color:var(--gold)}
-h1{margin:8px 0 10px;font-size:36px;line-height:1.2}
-.lead{max-width:800px;font-size:14px;line-height:1.8;color:var(--muted)}
+h1{font-size:36px;line-height:1.2;margin:8px 0 9px}
+.lead{font-size:14px;color:var(--muted);line-height:1.8;max-width:830px}
 .badges{display:flex;gap:7px;flex-wrap:wrap;margin-top:17px}
-.badge{border:1px solid var(--line);border-radius:999px;padding:7px 11px;font-size:11px;font-weight:850;background:#fff}
+.badge{border:1px solid var(--line);border-radius:999px;background:#fff;padding:7px 11px;font-size:11px;font-weight:850}
 .badge.must{background:var(--navy);color:#fff;border-color:var(--navy)}
 main{padding:30px 34px 44px}
-
-.quick{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:30px;
-}
-.quick a{
-  text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:14px;
-  padding:15px;background:var(--soft);display:flex;gap:12px;align-items:center;
-}
-.quick .ico{
-  width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
-  background:var(--navy);color:#fff;font-size:20px;flex:0 0 auto
-}
-.quick strong{display:block;font-size:13px}
-.quick small{display:block;margin-top:3px;color:var(--muted);font-size:10px;line-height:1.45}
-
+.jump{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-bottom:30px}
+.jump a{text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:13px;background:var(--soft);padding:13px 15px}
+.jump b{font-size:12px}.jump span{display:block;font-size:10px;color:var(--muted);margin-top:3px}
 .section{margin-top:34px}
-.section-head{display:flex;align-items:center;gap:10px;margin-bottom:15px}
-.num{width:31px;height:31px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-size:12px;font-weight:900}
-.section-head h2{font-size:24px;margin:0}
-.section-head .sub{margin-left:auto;color:var(--muted);font-size:11px}
-
-.must-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.must-card{
-  border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;
-  border-top:5px solid var(--navy);
-}
-.visual{
-  height:140px;display:flex;align-items:center;justify-content:center;position:relative;
-  background:linear-gradient(135deg,#edf2f3,#f7f2e9);
-}
-.visual .emoji{font-size:52px;filter:saturate(.8)}
-.visual .flag{
-  position:absolute;left:12px;top:12px;background:var(--navy);color:#fff;
-  border-radius:999px;padding:5px 8px;font-size:9px;font-weight:900;letter-spacing:.04em;
-}
-.body{padding:17px}
-.tagline{font-size:10px;font-weight:900;color:var(--gold);letter-spacing:.05em}
-.card-title{font-size:20px;margin:5px 0 2px}
-.shop{font-size:11px;color:var(--muted);font-weight:750;margin-bottom:10px}
-.desc{font-size:12px;line-height:1.72;color:#52616c;margin:0 0 12px}
-.meta{display:grid;grid-template-columns:72px 1fr;gap:5px 8px;font-size:11px;line-height:1.5;margin:0}
-.meta dt{color:#87919a}.meta dd{margin:0;font-weight:780}
-.note{
-  margin-top:12px;border-left:3px solid var(--gold);background:#fbf8f3;border-radius:0 8px 8px 0;
-  padding:9px 10px;font-size:11px;line-height:1.55;
-}
-.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
-.btn{
-  display:inline-flex;text-decoration:none;padding:7px 10px;border-radius:8px;
-  background:var(--navy);color:#fff;font-size:10px;font-weight:900
-}
-.btn.alt{background:#705b3d}.btn.gray{background:#63737e}
-
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
-.card{border:1px solid var(--line);border-radius:15px;background:#fff;padding:17px}
-.top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.head{display:flex;align-items:center;gap:10px;margin-bottom:15px}
+.head .n{width:31px;height:31px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-size:12px;font-weight:900}
+.head h2{margin:0;font-size:23px}.head small{margin-left:auto;color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.card.must{border-top:5px solid var(--navy)}
+.photo{height:190px;position:relative;background:linear-gradient(135deg,#e9eff1,#f4f0e8);overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo.contain img{object-fit:contain;padding:12px;background:#fff}
+.fallback{display:none;position:absolute;inset:0;align-items:center;justify-content:center;text-align:center;padding:20px;color:#65737d;font-weight:900}
+.flag{position:absolute;left:12px;top:12px;background:rgba(24,56,79,.94);color:#fff;border-radius:999px;padding:5px 8px;font-size:9px;font-weight:900;z-index:2}
+.body{padding:16px 17px 17px}
+.top{display:flex;gap:7px;align-items:center;justify-content:space-between}
 .rank{display:inline-flex;border-radius:999px;background:var(--sand);color:#715837;padding:5px 8px;font-size:9px;font-weight:900}
-.place{font-size:9px;font-weight:900;color:var(--navy2);border:1px solid #cad8df;border-radius:999px;padding:4px 7px}
-.card h3{font-size:18px;margin:8px 0 3px}
-.card .shop{margin-bottom:9px}
-.card p{font-size:12px;color:#53636f;line-height:1.68;margin:0 0 10px}
-
-.backup{
-  border:1px solid var(--line);border-radius:15px;background:linear-gradient(135deg,#f8fafb,#fbf8f2);
-  padding:18px;
-}
-.backup h3{margin:0 0 7px;font-size:17px}
-.backup p{font-size:12px;line-height:1.7;color:#596873;margin:0 0 12px}
-.backup-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.backup-item{background:#fff;border:1px solid var(--line);border-radius:11px;padding:12px}
-.backup-item strong{display:block;font-size:12px}
-.backup-item span{font-size:10px;line-height:1.55;color:var(--muted)}
-
-.shopbox{
-  margin-top:18px;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:17px;
-}
-.shopbox strong{font-size:13px}
-.shopbox p{font-size:11px;line-height:1.65;color:var(--muted);margin:5px 0 0}
-.shopbox a{color:var(--navy2);font-weight:850}
-
+.place{font-size:9px;font-weight:900;color:var(--navy2);border:1px solid #cad8df;border-radius:999px;padding:4px 7px;white-space:nowrap}
+.card h3{font-size:19px;margin:8px 0 3px}
+.shop{font-size:11px;color:var(--muted);font-weight:750;margin-bottom:9px}
+.desc{font-size:12px;color:#53636f;line-height:1.68;margin:0 0 11px}
+.meta{display:grid;grid-template-columns:75px 1fr;gap:5px 8px;font-size:11px;line-height:1.5;margin:0}
+.meta dt{color:#89939b}.meta dd{margin:0;font-weight:760}
+.note{margin-top:11px;border-left:3px solid var(--gold);background:#fbf8f3;border-radius:0 8px 8px 0;padding:9px 10px;font-size:11px;line-height:1.55}
+.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+.btn{display:inline-flex;text-decoration:none;padding:7px 10px;border-radius:8px;background:var(--navy);color:#fff;font-size:10px;font-weight:900}
+.btn.alt{background:#705b3d}.btn.gray{background:#65737d}
+.tipbox{margin-top:16px;border:1px solid var(--line);border-radius:14px;background:var(--soft);padding:15px 17px}
+.tipbox b{font-size:12px}.tipbox p{font-size:11px;line-height:1.65;color:var(--muted);margin:5px 0 0}
 .tablewrap{border:1px solid var(--line);border-radius:14px;overflow-x:auto}
-table{width:100%;border-collapse:collapse;min-width:720px}
-th,td{padding:11px 12px;text-align:left;border-bottom:1px solid #edf0f2;font-size:11px;vertical-align:top}
-th{background:#f4f7f8;color:#53616c}
-tr:last-child td{border-bottom:none}
-.priority{font-weight:900;color:var(--navy)}
-.caution{color:var(--red);font-weight:800}
-
-footer{
-  border-top:1px solid var(--line);padding:20px 34px 26px;color:#87919a;font-size:10px;line-height:1.65
-}
-footer a{color:#617b8d}
-@media(max-width:850px){
-  .page{margin:0}.hero{padding:30px 18px 25px}h1{font-size:28px}
-  main{padding:22px 14px 34px}
-  .quick,.must-grid,.grid,.backup-grid{grid-template-columns:1fr}
-  .visual{height:115px}
-  .section-head h2{font-size:21px}.section-head .sub{display:none}
+table{width:100%;border-collapse:collapse;min-width:760px}
+th,td{padding:11px 12px;border-bottom:1px solid #edf0f2;text-align:left;font-size:11px;vertical-align:top}
+th{background:#f4f7f8;color:#53616c} tr:last-child td{border-bottom:none}
+.pri{font-weight:900;color:var(--navy)}.caution{color:var(--red);font-weight:850}
+footer{border-top:1px solid var(--line);padding:21px 34px 28px;color:#8a949c;font-size:10px;line-height:1.7}
+@media(max-width:860px){
+ .page{margin:0}.hero{padding:30px 18px 25px}h1{font-size:28px}
+ main{padding:22px 14px 34px}.jump,.grid3,.grid2{grid-template-columns:1fr}
+ .photo{height:210px}.head h2{font-size:21px}.head small{display:none}
 }
 </style>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ document.querySelectorAll(".photo img").forEach(img=>{
+   img.addEventListener("error",()=>{
+     img.style.display="none";
+     const f=img.parentElement.querySelector(".fallback");
+     if(f) f.style.display="flex";
+   });
+ });
+});
+</script>
 </head>
 <body>
 <div class="page">
 <header class="hero">
-  <div class="eyebrow">MIYAZAKI CITY & AIRPORT / SOUVENIR GUIDE</div>
-  <h1>宮崎市内＆宮崎空港｜お土産リスト</h1>
-  <div class="lead">
-    宮崎市内と宮崎ブーゲンビリア空港で買えるものだけに絞った共有用リスト。
-    「宮崎らしさ」「地元支持」「味の評価」「持ち帰りやすさ」を重視し、
-    特に<strong>チーズ饅頭・鶏炭火焼・辛麺</strong>は必ず押さえたい3品として選定しています。
-  </div>
-  <div class="badges">
-    <span class="badge must">マスト3品</span>
-    <span class="badge">宮崎市内</span>
-    <span class="badge">宮崎空港</span>
-    <span class="badge">飲食店情報なし</span>
-    <span class="badge">2026年10月確認</span>
-  </div>
+ <div class="eyebrow">MIYAZAKI CITY & AIRPORT / SOUVENIR GUIDE</div>
+ <h1>宮崎市内＆宮崎空港｜お土産リスト</h1>
+ <div class="lead">
+  みんなで共有するための「お土産だけ」版。宮崎市内と宮崎ブーゲンビリア空港で狙える候補に限定し、
+  <b>チーズ饅頭・鶏炭火焼・辛麺</b>をマスト3品として固定。甘い物・酒のつまみ・常温品・郷土菓子までバランスよく選びました。
+ </div>
+ <div class="badges">
+  <span class="badge must">マスト3品</span><span class="badge">全11候補</span>
+  <span class="badge">宮崎市内</span><span class="badge">宮崎空港</span><span class="badge">2026年10月確認</span>
+ </div>
 </header>
-
 <main>
-<div class="quick">
-  <a href="#must"><span class="ico">★</span><span><strong>まずはマスト3品</strong><small>迷ったらここだけ買えばOK</small></span></a>
-  <a href="#city"><span class="ico">街</span><span><strong>宮崎市内</strong><small>現地まで行く価値が高いもの</small></span></a>
-  <a href="#airport"><span class="ico">✈</span><span><strong>宮崎空港</strong><small>出発前に買いやすい良品</small></span></a>
+
+<div class="jump">
+ <a href="#must"><b>★ マスト3品</b><span>まずここだけ押さえればOK</span></a>
+ <a href="#city"><b>宮崎市内</b><span>店まで行く価値が高いもの</span></a>
+ <a href="#airport"><b>✈ 宮崎空港</b><span>最後に買える良品</span></a>
 </div>
 
 <section class="section" id="must">
-<div class="section-head"><div class="num">1</div><h2>絶対に押さえたい3品</h2><div class="sub">県民支持と現地性を優先</div></div>
-<div class="must-grid">
+<div class="head"><div class="n">1</div><h2>絶対に押さえたい3品</h2><small>チーズ饅頭・炭火焼・辛麺</small></div>
+<div class="grid3">
 
-<article class="must-card">
-  <div class="visual"><span class="flag">MUST 01｜市内</span><span class="emoji">🧀</span></div>
-  <div class="body">
-    <div class="tagline">店舗でしか買えない本命</div>
-    <h3 class="card-title">チーズ饅頭</h3>
-    <div class="shop">菓子処 わらべ</div>
-    <p class="desc">昭和59年創業。手作り・品質重視のため地方発送をしておらず、店頭まで行く意味が明確。2026年の口コミでも「店舗でしか買えない」「予約推奨」「普通のチーズ饅頭とは別物」という評価が継続しています。</p>
-    <dl class="meta">
-      <dt>価格</dt><dd>1個 200円 / 5個箱 1,120円 / 10個箱 2,120円</dd>
-      <dt>保存</dt><dd>要冷蔵・消費期限3日</dd>
-      <dt>営業時間</dt><dd>9:00–17:30</dd>
-      <dt>定休日</dt><dd>日曜＋臨時休あり</dd>
-      <dt>支払い</dt><dd>現金のみ</dd>
-    </dl>
-    <div class="note"><b>重要：</b>売切れがあるため電話予約推奨。旅行の前半より、帰る日に近いタイミングで買う方が扱いやすいです。</div>
-    <div class="actions">
-      <a class="btn" href="https://spxc4wf9.wixsite.com/website" target="_blank">公式</a>
-      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=菓子処わらべ+宮崎市大王町38-1" target="_blank">地図</a>
-    </div>
-  </div>
+<article class="card must">
+ <div class="photo">
+  <span class="flag">MUST 01｜市内</span>
+  <img src="https://stat.ameba.jp/user_images/20210410/16/atelier-saku/ec/f5/j/o2553191514924162006.jpg" alt="わらべ チーズ饅頭">
+  <div class="fallback">菓子処 わらべ<br>チーズ饅頭</div>
+ </div>
+ <div class="body">
+  <div class="top"><span class="rank">S+｜最優先</span><span class="place">宮崎市</span></div>
+  <h3>チーズ饅頭</h3><div class="shop">菓子処 わらべ</div>
+  <p class="desc">昭和59年創業の専門店。手作り・品質重視のため地方発送を行わず、店頭まで行く意味がはっきりしています。売切れもあるので予約前提で考える候補。</p>
+  <dl class="meta"><dt>価格</dt><dd>1個200円 / 5個箱1,120円 / 10個箱2,120円</dd><dt>保存</dt><dd>要冷蔵・3日以内</dd><dt>営業</dt><dd>9:00–17:30 / 日曜定休</dd><dt>住所</dt><dd>宮崎市大王町38-1</dd></dl>
+  <div class="note"><b>買い方：</b>電話予約推奨。保冷剤・保冷バッグも店頭販売あり。</div>
+  <div class="actions"><a class="btn" href="https://spxc4wf9.wixsite.com/website" target="_blank">公式</a><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=菓子処わらべ+宮崎市大王町38-1" target="_blank">地図</a></div>
+ </div>
 </article>
 
-<article class="must-card">
-  <div class="visual"><span class="flag">MUST 02｜空港</span><span class="emoji">🔥</span></div>
-  <div class="body">
-    <div class="tagline">炭火焼土産の本命</div>
-    <h3 class="card-title">鶏炭火焼</h3>
-    <div class="shop">スモーク・エース 宮崎空港直営店</div>
-    <p class="desc">1983年創業、1987年に鶏炭火焼の真空パックを商品化。宮崎空港2Fに直営店があり、実演販売も行う専門メーカーです。大量の類似パウチから適当に選ぶより、専門店で選ぶ方を推奨します。</p>
-    <dl class="meta">
-      <dt>定番</dt><dd>鶏炭火焼 180g 1,290円</dd>
-      <dt>上位</dt><dd>みやざき地頭鶏炭火焼 2,700円</dd>
-      <dt>場所</dt><dd>宮崎空港2F・日向屋内</dd>
-      <dt>特徴</dt><dd>直営・実演販売あり</dd>
-    </dl>
-    <div class="note"><b>選び方：</b>本当に「地鶏」を優先するなら、商品名に<b>「みやざき地頭鶏」</b>と明記された上位品を。一般の「鶏炭火焼」と区別して選ぶのがポイント。</div>
-    <div class="actions">
-      <a class="btn" href="https://www.smokeace.jp/f/actualshop" target="_blank">空港店公式</a>
-      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=スモークエース+宮崎空港店" target="_blank">地図</a>
-    </div>
-  </div>
+<article class="card must">
+ <div class="photo">
+  <span class="flag">MUST 02｜空港</span>
+  <img src="https://food.itembox.cloud/item/free/image_2409_06_2k.jpg" alt="スモークエース 鶏炭火焼">
+  <div class="fallback">スモーク・エース<br>鶏炭火焼</div>
+ </div>
+ <div class="body">
+  <div class="top"><span class="rank">S+｜炭火焼本命</span><span class="place">宮崎空港</span></div>
+  <h3>鶏炭火焼</h3><div class="shop">スモーク・エース 宮崎空港直営店</div>
+  <p class="desc">1987年に鶏炭火焼の真空パック商品化を始めた専門メーカー。空港2Fの直営店で買えるため、似た商品が多い炭火焼土産の中で選びやすい本命です。</p>
+  <dl class="meta"><dt>定番</dt><dd>鶏炭火焼 180g 1,290円</dd><dt>上位</dt><dd>みやざき地頭鶏炭火焼 2,700円</dd><dt>場所</dt><dd>空港2F・日向屋内</dd></dl>
+  <div class="note"><b>ポイント：</b>「地鶏」を重視するなら商品名に<b>みやざき地頭鶏</b>と明記された方を選ぶ。</div>
+  <div class="actions"><a class="btn" href="https://www.smokeace.jp/f/actualshop" target="_blank">空港店</a></div>
+ </div>
 </article>
 
-<article class="must-card">
-  <div class="visual"><span class="flag">MUST 03｜空港</span><span class="emoji">🌶️</span></div>
-  <div class="body">
-    <div class="tagline">宮崎辛麺の基準</div>
-    <h3 class="card-title">辛麺</h3>
-    <div class="shop">元祖辛麺屋 桝元</div>
-    <p class="desc">宮崎辛麺を持ち帰るなら、まず桝元。宮崎空港2F「燦々市場」が公式に桝元の辛麺各種をおすすめ商品として掲載しています。自宅で卵やニラを足すと、より現地らしい仕上がりになります。</p>
-    <dl class="meta">
-      <dt>黒辛</dt><dd>1食 680円</dd>
-      <dt>他味</dt><dd>赤辛・トマト・白・味噌・カレー 各720円</dd>
-      <dt>空港</dt><dd>2F 燦々市場</dd>
-      <dt>営業時間</dt><dd>6:30–20:10</dd>
-    </dl>
-    <div class="note"><b>最初の1個：</b>黒辛が基本。辛いものが好きなら赤辛を追加。通販可能なので「限定性」より「宮崎らしさ・再現性」を重視する商品です。</div>
-    <div class="actions">
-      <a class="btn" href="https://karamenmasumoto.shop-pro.jp/" target="_blank">商品公式</a>
-      <a class="btn alt" href="https://www.miyazaki-airport.co.jp/shop/sansan" target="_blank">燦々市場</a>
-    </div>
-  </div>
+<article class="card must">
+ <div class="photo contain">
+  <span class="flag">MUST 03｜空港</span>
+  <img src="https://shop.r10s.jp/monone/cabinet/shohin11/4990022485120.jpg" alt="桝元 辛麺">
+  <div class="fallback">元祖辛麺屋 桝元<br>辛麺</div>
+ </div>
+ <div class="body">
+  <div class="top"><span class="rank">S｜宮崎定番</span><span class="place">宮崎空港</span></div>
+  <h3>辛麺</h3><div class="shop">元祖辛麺屋 桝元</div>
+  <p class="desc">宮崎辛麺の定番。宮崎空港2F「燦々市場」が桝元の辛麺各種をおすすめ商品として案内しています。</p>
+  <dl class="meta"><dt>黒辛</dt><dd>1食680円</dd><dt>他味</dt><dd>赤辛・トマト・白・味噌・カレー 各720円</dd><dt>空港</dt><dd>2F 燦々市場 / 6:30–20:10</dd></dl>
+  <div class="note"><b>最初の1個：</b>黒辛。辛党なら赤辛を追加。</div>
+  <div class="actions"><a class="btn" href="https://karamenmasumoto.shop-pro.jp/" target="_blank">商品公式</a><a class="btn alt" href="https://www.miyazaki-airport.co.jp/shop/sansan" target="_blank">燦々市場</a></div>
+ </div>
 </article>
-
 </div>
 </section>
 
 <section class="section" id="city">
-<div class="section-head"><div class="num">2</div><h2>宮崎市内で買う価値が高いもの</h2><div class="sub">空港任せにしない候補</div></div>
-<div class="grid">
+<div class="head"><div class="n">2</div><h2>宮崎市内で買う価値が高いもの</h2><small>現地性を優先</small></div>
+<div class="grid2">
 
 <article class="card">
-  <div class="top"><span class="rank">S｜宮崎ロングセラー</span><span class="place">市中心部</span></div>
-  <h3>なんじゃこら大福</h3>
-  <div class="shop">お菓子の日高 本店</div>
-  <p>苺・栗・クリームチーズが入った大きな大福。宮崎県民106人を対象にした2026年じゃらん調査では、お土産2位。宮崎らしい「話題性」と味を両立した生菓子です。</p>
-  <dl class="meta">
-    <dt>保存</dt><dd>生菓子・賞味期限は発送日より4日</dd>
-    <dt>営業時間</dt><dd>9:00–21:00</dd>
-    <dt>住所</dt><dd>宮崎市橘通西2-7-25</dd>
-  </dl>
-  <div class="note">日持ちは長くないため、自宅・家族向け。職場への大量配布には不向きです。</div>
-  <div class="actions">
-    <a class="btn" href="https://okashinohidaka.com/" target="_blank">公式</a>
-    <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=お菓子の日高+本店+宮崎市" target="_blank">地図</a>
-  </div>
+ <div class="photo contain"><img src="https://meitenbanzai.com/photo/56/item/1/pho.jpg" alt="なんじゃこら大福"><div class="fallback">お菓子の日高<br>なんじゃこら大福</div></div>
+ <div class="body">
+  <div class="top"><span class="rank">S｜ロングセラー</span><span class="place">宮崎市中心部</span></div>
+  <h3>なんじゃこら大福</h3><div class="shop">お菓子の日高 本店</div>
+  <p class="desc">苺・栗・クリームチーズを包んだ大きな大福。見た目のインパクトだけでなく、宮崎の定番手土産として長く支持されている生菓子。</p>
+  <dl class="meta"><dt>営業</dt><dd>9:00–21:00</dd><dt>住所</dt><dd>宮崎市橘通西2-7-25</dd><dt>保存</dt><dd>生菓子・発送日より4日目安</dd></dl>
+  <div class="note">家族・自宅向け。大量配布より「自分たちで食べる」方に向いています。</div>
+  <div class="actions"><a class="btn" href="https://okashinohidaka.com/" target="_blank">公式</a></div>
+ </div>
 </article>
 
 <article class="card">
-  <div class="top"><span class="rank">S｜ここまで行く価値あり</span><span class="place">佐土原</span></div>
-  <h3>鯨ようかん</h3>
-  <div class="shop">阪本商店</div>
-  <p>江戸時代から佐土原に伝わる郷土菓子。宮崎市公式も、地元客が次々と訪れ、お土産需要も多い店として紹介。現在、鯨ようかんを作る店自体が市内に約6軒と少なく、現地性は非常に高いです。</p>
-  <dl class="meta">
-    <dt>営業</dt><dd>8:00～売切れまで</dd>
-    <dt>定休日</dt><dd>不定休</dd>
-    <dt>保存</dt><dd>生菓子・当日中推奨</dd>
-    <dt>住所</dt><dd>宮崎市佐土原町上田島38-1</dd>
-  </dl>
-  <div class="note"><b>確実に欲しい場合：</b>前日までに電話予約推奨。市中心部から離れるため、時間がある人向けの“通好み”枠。</div>
-  <div class="actions">
-    <a class="btn" href="https://www.city.miyazaki.miyazaki.jp/miyazaki-shokudo/morning/kujirayoukan.html" target="_blank">宮崎市公式</a>
-    <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=阪本商店+鯨ようかん+宮崎市佐土原町" target="_blank">地図</a>
-  </div>
+ <div class="photo contain"><img src="https://furusato.jreast.co.jp/html/upload/save_image/shop/17584/product/212276/image_2.jpg" alt="鯨ようかん"><div class="fallback">阪本商店<br>鯨ようかん</div></div>
+ <div class="body">
+  <div class="top"><span class="rank">S｜郷土性◎</span><span class="place">佐土原</span></div>
+  <h3>鯨ようかん</h3><div class="shop">阪本商店</div>
+  <p class="desc">約300年前の佐土原藩の祝い菓子に由来するとされる郷土菓子。保存料を使わず、できたてのもちもち食感と控えめな甘さが特徴。</p>
+  <dl class="meta"><dt>営業</dt><dd>8:00～売切れまで</dd><dt>定休</dt><dd>不定休</dd><dt>住所</dt><dd>宮崎市佐土原町上田島38-1</dd></dl>
+  <div class="note">確実に欲しい場合は前日予約。日持ちより「出来たて」を楽しむ品。</div>
+  <div class="actions"><a class="btn" href="https://sakamoto-store.machipeta.site/index.html" target="_blank">商品情報</a></div>
+ </div>
 </article>
 
 <article class="card">
+ <div class="photo contain"><img src="https://crea.ismcdn.jp/mwimgs/6/a/670wm/img_6ae3c8ad9bc7b1aecaebe2d408aac19f68448.jpg" alt="青島ういろう"><div class="fallback">三松宇いろう<br>青島ういろう</div></div>
+ <div class="body">
   <div class="top"><span class="rank">A+｜伝統菓子</span><span class="place">宮崎市</span></div>
-  <h3>青島ういろう</h3>
-  <div class="shop">三松宇いろう本店</div>
-  <p>うるち米と砂糖を中心に作る素朴な宮崎の伝統菓子。県民アンケートでも上位に入り、派手さより「宮崎らしい昔ながらの味」を選びたい人向けです。</p>
-  <dl class="meta">
-    <dt>三松ういろう</dt><dd>580円</dd>
-    <dt>日向夏</dt><dd>630円</dd>
-    <dt>特徴</dt><dd>添加物不使用・真空加熱殺菌</dd>
-    <dt>住所</dt><dd>宮崎市東大淀2-1-35</dd>
-  </dl>
-  <div class="note">甘さ控えめの和菓子が好きな人向け。生菓子系より持ち帰りやすいのも利点。</div>
-  <div class="actions">
-    <a class="btn" href="https://www.m-tokusan.or.jp/company/106469614/" target="_blank">商品情報</a>
-    <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=三松宇いろう本店+宮崎市" target="_blank">地図</a>
-  </div>
+  <h3>青島ういろう</h3><div class="shop">三松宇いろう本店</div>
+  <p class="desc">うるち米を主原料に、白糖・黒糖で作る素朴な宮崎名物。波打つ並べ方は青島の「鬼の洗濯板」を模したものとされています。</p>
+  <dl class="meta"><dt>白・黒</dt><dd>各5切れ 650円</dd><dt>日向夏</dt><dd>10切れ 700円</dd><dt>保存</dt><dd>常温・真空包装</dd></dl>
+  <div class="actions"><a class="btn" href="https://mimatsu-uirou.com/" target="_blank">公式</a></div>
+ </div>
 </article>
 
 <article class="card">
-  <div class="top"><span class="rank">A｜まとめ買い拠点</span><span class="place">県庁内</span></div>
-  <h3>県産品をまとめて比較</h3>
-  <div class="shop">みやざき物産館KONNE</div>
-  <p>県庁内の物産館。鶏炭火焼・辛麺・調味料・茶・乾物など、宮崎県産品を広く比較できます。「店を何軒も回れないが、空港だけにも任せたくない」という人に便利。</p>
-  <dl class="meta">
-    <dt>営業時間</dt><dd>9:00–18:00</dd>
-    <dt>住所</dt><dd>宮崎市宮田町1-6 県庁8号館1F</dd>
-    <dt>駐車場</dt><dd>県庁外来駐車場</dd>
-  </dl>
-  <div class="actions">
-    <a class="btn" href="https://www.m-tokusan.or.jp/miyazaki/" target="_blank">公式</a>
-    <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=みやざき物産館KONNE+宮崎市" target="_blank">地図</a>
-  </div>
+ <div class="photo contain"><img src="https://www.tsutsu-uraura.jp/cdn/shop/files/tomura-600-500r_dc26eecb-7718-4c5d-b954-f5252a2988f0.jpg?v=1750999899" alt="戸村本店の焼肉のたれ"><div class="fallback">戸村本店<br>焼肉のたれ</div></div>
+ <div class="body">
+  <div class="top"><span class="rank">A+｜追加</span><span class="place">市内・県産品店</span></div>
+  <h3>戸村本店の焼肉のたれ</h3><div class="shop">戸村本店</div>
+  <p class="desc">宮崎市観光公式が「宮崎県で売上No.1」と紹介する県民定番。リンゴやバナナを使った濃厚でフルーティーな味で、観光用だけではなく地元の日常感がある土産です。</p>
+  <dl class="meta"><dt>200g</dt><dd>普通400円 / 特選440円</dd><dt>極</dt><dd>200g 578円（2026年発売）</dd><dt>保存</dt><dd>常温・開栓後要冷蔵</dd></dl>
+  <div class="note"><b>おすすめ：</b>初めてなら普通200g。食にこだわる人向けなら「極」も候補。</div>
+  <div class="actions"><a class="btn" href="https://tomurahonten.com/shop/c/csauce-ya/" target="_blank">公式</a></div>
+ </div>
 </article>
 
 </div>
 </section>
 
 <section class="section" id="airport">
-<div class="section-head"><div class="num">3</div><h2>宮崎空港で追加したい良品</h2><div class="sub">最後に買える・持ち帰りやすい</div></div>
-<div class="grid">
+<div class="head"><div class="n">3</div><h2>宮崎空港で追加したい良品</h2><small>常温・配りやすさも重視</small></div>
+<div class="grid2">
 
 <article class="card">
-  <div class="top"><span class="rank">A+｜常温・実用性高</span><span class="place">空港</span></div>
-  <h3>鶏のささみくんせい</h3>
-  <div class="shop">雲海物産</div>
-  <p>宮崎県産若鶏と宮崎県産塩を使い、一本ずつ燻製。6本セットは全国推奨観光土産品審査会で日本商工会議所会頭賞を受賞。甘い土産が苦手な人にも渡しやすいです。</p>
-  <dl class="meta">
-    <dt>6本セット</dt><dd>1,440円</dd>
-    <dt>賞味期限</dt><dd>360日</dd>
-    <dt>保存</dt><dd>常温</dd>
-    <dt>味</dt><dd>うす塩・黒胡椒・ゆず胡椒等</dd>
-  </dl>
-  <div class="note">酒のつまみ・高タンパクおやつとして使いやすく、配り物にも強い。</div>
-  <div class="actions">
-    <a class="btn" href="https://www.unkaibussan.co.jp/item/" target="_blank">メーカー</a>
-    <a class="btn alt" href="https://shop.miyazaki-airport.co.jp/view/item/000000000380" target="_blank">空港商品情報</a>
-  </div>
+ <div class="photo contain"><img src="https://shop.r10s.jp/monone/cabinet/shohin13/4983140006025.jpg" alt="鶏のささみくんせい"><div class="fallback">雲海物産<br>鶏のささみくんせい</div></div>
+ <div class="body">
+  <div class="top"><span class="rank">A+｜非甘党向け</span><span class="place">宮崎空港</span></div>
+  <h3>鶏のささみくんせい</h3><div class="shop">雲海物産</div>
+  <p class="desc">宮崎県産若鶏を一本ずつ燻製。全国推奨観光土産品審査会で日本商工会議所会頭賞を受賞した実績がある、甘くない土産の優等生。</p>
+  <dl class="meta"><dt>6本セット</dt><dd>1,440円</dd><dt>保存</dt><dd>常温</dd><dt>味</dt><dd>うす塩・黒胡椒など</dd></dl>
+  <div class="actions"><a class="btn" href="https://shop.miyazaki-airport.co.jp/view/item/000000000380" target="_blank">空港商品</a></div>
+ </div>
 </article>
 
 <article class="card">
-  <div class="top"><span class="rank">A+｜空港名物</span><span class="place">空港</span></div>
-  <h3>ガンジスカレー</h3>
-  <div class="shop">味のガンジス</div>
-  <p>宮崎空港で50年愛されてきた伝統カレーのレトルト。野菜の甘みと挽肉の旨みが特徴で、「宮崎県全体の定番」というより“宮崎空港そのものの名物”として面白い一品。</p>
-  <dl class="meta">
-    <dt>価格</dt><dd>180g 550円</dd>
-    <dt>賞味期限</dt><dd>製造日より1年</dd>
-    <dt>保存</dt><dd>常温</dd>
-    <dt>種類</dt><dd>ガンジス / 宮崎和牛 / 宮崎黒豚</dd>
-  </dl>
-  <div class="note">軽くて日持ちが長く、家族・自宅用に買いやすい。複数種類を食べ比べても面白いです。</div>
-  <div class="actions">
-    <a class="btn" href="https://www.m-tokusan.or.jp/kensan/225717459/" target="_blank">商品情報</a>
-  </div>
+ <div class="photo contain"><img src="https://image.rakuten.co.jp/foods-season/cabinet/photo/items/curry/0801011_01.jpg" alt="ガンジスカレー"><div class="fallback">味のガンジス<br>ガンジスカレー</div></div>
+ <div class="body">
+  <div class="top"><span class="rank">A+｜空港名物</span><span class="place">宮崎空港</span></div>
+  <h3>ガンジスカレー</h3><div class="shop">味のガンジス</div>
+  <p class="desc">宮崎空港で長年愛されるカレーをレトルト化。県全体の名物というより「宮崎空港の思い出」を持ち帰れる商品です。</p>
+  <dl class="meta"><dt>価格</dt><dd>180g 550円</dd><dt>保存</dt><dd>常温・製造日より1年</dd><dt>種類</dt><dd>ガンジス / 宮崎和牛 / 宮崎黒豚</dd></dl>
+ </div>
+</article>
+
+<article class="card">
+ <div class="photo contain"><img src="https://image.rakuten.co.jp/mamanmarchetakanabe/cabinet/gobochi/gobochi_1.jpg" alt="ゴボチ"><div class="fallback">デイリーマーム<br>ゴボチ</div></div>
+ <div class="body">
+  <div class="top"><span class="rank">A+｜追加</span><span class="place">宮崎空港</span></div>
+  <h3>ゴボチ</h3><div class="shop">デイリーマーム</div>
+  <p class="desc">国産ごぼうを国産米油で揚げ、だし醤油で仕上げるごぼうチップス。宮崎のお弁当屋の惣菜から生まれた商品で、甘い物が苦手な人にも強い。</p>
+  <dl class="meta"><dt>目安</dt><dd>20g 281円前後</dd><dt>保存</dt><dd>常温・製造日より120日</dd><dt>空港</dt><dd>ANA FESTAでYUZUSCO味を公式おすすめ</dd></dl>
+  <div class="note">プレーン醤油味が基本。変化球ならYUZUSCO味。</div>
+  <div class="actions"><a class="btn" href="https://www.miyazaki-airport.co.jp/shop/ana-festa" target="_blank">ANA FESTA</a></div>
+ </div>
+</article>
+
+<article class="card">
+ <div class="photo contain"><img src="https://shop.r10s.jp/yamakataya/cabinet/miya/myf1650.jpg" alt="青島せんべい"><div class="fallback">お菓子の日進堂<br>青島せんべい</div></div>
+ <div class="body">
+  <div class="top"><span class="rank">A+｜追加</span><span class="place">宮崎空港</span></div>
+  <h3>青島せんべい</h3><div class="shop">お菓子の日進堂</div>
+  <p class="desc">昭和40年代から親しまれる宮崎代表銘菓。米粉を配合した薄焼きせんべいに、ホワイト・ナッツのクリームをサンド。懐かしさのあるロングセラーです。</p>
+  <dl class="meta"><dt>6袋入</dt><dd>702円目安</dd><dt>12袋入</dt><dd>1,296円</dd><dt>特徴</dt><dd>個包装・配りやすい</dd></dl>
+  <div class="note">定番のホワイト＆ナッツに加え、マンゴー・日向夏系のフルーティ版もあります。</div>
+ </div>
 </article>
 
 </div>
 
-<div class="backup" style="margin-top:15px">
-  <h3>チーズ饅頭を「わらべ」で買えなかった場合の空港バックアップ</h3>
-  <p>わらべは日曜定休・売切れあり・要冷蔵3日なので、全員が市内店へ行けるとは限りません。空港には複数のチーズ饅頭があり、最後の保険として使えます。</p>
-  <div class="backup-grid">
-    <div class="backup-item"><strong>JAL PLAZA</strong><span>風月堂チーズまんじゅう 10個入を公式おすすめ商品として掲載。2F。</span></div>
-    <div class="backup-item"><strong>ANA FESTA</strong><span>「らんみやチーズまんじゅう」を公式おすすめ商品として掲載。2F。</span></div>
-    <div class="backup-item"><strong>日向屋</strong><span>味のくらやが実演販売する「和風チーズ饅頭」が人気。2F。</span></div>
-  </div>
-  <div class="actions">
-    <a class="btn gray" href="https://www.miyazaki-airport.co.jp/shop/blue-sky" target="_blank">JAL PLAZA</a>
-    <a class="btn gray" href="https://www.miyazaki-airport.co.jp/shop/ana-festa" target="_blank">ANA FESTA</a>
-    <a class="btn gray" href="https://www.miyazaki-airport.co.jp/shop/hyugaya" target="_blank">日向屋</a>
-  </div>
-</div>
-
-<div class="shopbox">
-  <strong>空港で迷ったら：2F「燦々市場」をまず確認</strong>
-  <p>宮崎空港公式では、燦々市場を「鶏の炭火焼など宮崎の代表的なお土産を幅広く揃える店」と案内し、<b>桝元の辛麺各種</b>をおすすめ商品として明記しています。営業時間は6:30–20:10。<a href="https://www.miyazaki-airport.co.jp/shop/sansan" target="_blank">公式情報を見る</a></p>
+<div class="tipbox">
+ <b>空港で迷ったら「燦々市場」→ ANA FESTA → 日向屋の順に確認</b>
+ <p>燦々市場は辛麺や青島せんべいなど宮崎土産の品揃えが広く、ANA FESTAはゴボチYUZUSCO味を公式おすすめ商品として掲載。炭火焼は日向屋内のスモーク・エース直営店が本命です。</p>
 </div>
 </section>
 
 <section class="section">
-<div class="section-head"><div class="num">4</div><h2>最終優先順位</h2><div class="sub">迷った時の順番</div></div>
+<div class="head"><div class="n">4</div><h2>最終優先順位</h2><small>迷ったらこの順番</small></div>
 <div class="tablewrap">
 <table>
-<thead><tr><th>順位</th><th>お土産</th><th>買う場所</th><th>現地性</th><th>持ち帰り</th><th>向いている人</th></tr></thead>
+<thead><tr><th>順位</th><th>お土産</th><th>場所</th><th>宮崎らしさ</th><th>持ち帰り</th><th>向いている人</th></tr></thead>
 <tbody>
-<tr><td class="priority">1</td><td><b>わらべ チーズ饅頭</b></td><td>宮崎市内</td><td>◎ 店頭のみ</td><td class="caution">△ 要冷蔵3日</td><td>家族・自分</td></tr>
-<tr><td class="priority">2</td><td><b>スモーク・エース 鶏炭火焼</b></td><td>宮崎空港</td><td>◎ 空港直営</td><td>○</td><td>自宅・酒好き</td></tr>
-<tr><td class="priority">3</td><td><b>桝元 辛麺</b></td><td>宮崎空港</td><td>○ 宮崎定番</td><td>◎</td><td>辛党・自宅</td></tr>
-<tr><td class="priority">4</td><td>なんじゃこら大福</td><td>宮崎市内</td><td>◎ 宮崎名物</td><td class="caution">△ 生菓子</td><td>家族・甘党</td></tr>
-<tr><td class="priority">5</td><td>阪本商店 鯨ようかん</td><td>佐土原</td><td>◎◎ 郷土性高</td><td class="caution">△ 当日推奨</td><td>通好み・自分</td></tr>
-<tr><td>6</td><td>雲海物産 ささみくんせい</td><td>宮崎空港</td><td>○</td><td>◎ 常温360日</td><td>配布・酒好き</td></tr>
-<tr><td>7</td><td>青島ういろう</td><td>宮崎市内</td><td>◎ 伝統菓子</td><td>◎</td><td>和菓子好き</td></tr>
-<tr><td>8</td><td>ガンジスカレー</td><td>宮崎空港</td><td>◎ 空港名物</td><td>◎ 常温1年</td><td>家族・自宅</td></tr>
+<tr><td class="pri">1</td><td><b>わらべ チーズ饅頭</b></td><td>宮崎市</td><td>◎◎ 店頭のみ</td><td class="caution">△ 要冷蔵3日</td><td>家族・自分</td></tr>
+<tr><td class="pri">2</td><td><b>スモーク・エース 鶏炭火焼</b></td><td>空港</td><td>◎</td><td>○</td><td>自宅・酒好き</td></tr>
+<tr><td class="pri">3</td><td><b>桝元 辛麺</b></td><td>空港</td><td>◎</td><td>◎</td><td>辛党・自宅</td></tr>
+<tr><td class="pri">4</td><td>なんじゃこら大福</td><td>宮崎市</td><td>◎</td><td class="caution">△ 生菓子</td><td>家族・甘党</td></tr>
+<tr><td class="pri">5</td><td>阪本商店 鯨ようかん</td><td>佐土原</td><td>◎◎ 郷土性高</td><td class="caution">△ 当日向け</td><td>通好み</td></tr>
+<tr><td>6</td><td>ゴボチ</td><td>空港</td><td>○〜◎</td><td>◎</td><td>非甘党・配布</td></tr>
+<tr><td>7</td><td>青島せんべい</td><td>空港</td><td>◎ ロングセラー</td><td>◎</td><td>職場・配布</td></tr>
+<tr><td>8</td><td>戸村本店 焼肉のたれ</td><td>市内・県産品店</td><td>◎ 県民定番</td><td>◎</td><td>家族・料理好き</td></tr>
+<tr><td>9</td><td>鶏のささみくんせい</td><td>空港</td><td>○</td><td>◎</td><td>酒好き・非甘党</td></tr>
+<tr><td>10</td><td>青島ういろう</td><td>宮崎市</td><td>◎ 伝統菓子</td><td>◎</td><td>和菓子好き</td></tr>
+<tr><td>11</td><td>ガンジスカレー</td><td>空港</td><td>◎ 空港名物</td><td>◎</td><td>家族・自宅</td></tr>
 </tbody>
 </table>
 </div>
@@ -389,7 +290,7 @@ footer a{color:#617b8d}
 
 </main>
 <footer>
-  <div>情報確認：2026年10月。価格・営業時間・在庫は変更される場合があります。特に「わらべ」「阪本商店」は売切れ・臨時休があるため、当日の公式情報または電話確認を推奨します。</div>
+写真を含む商品情報は2026年10月時点の公開情報をもとに整理。価格・在庫・営業時間は変更される場合があります。特に「わらべ」「阪本商店」は売切れや臨時休があるため、購入予定日は事前確認推奨です。
 </footer>
 </div>
 </body>
