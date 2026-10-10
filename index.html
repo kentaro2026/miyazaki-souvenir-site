@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>宮崎ゴルフ旅行｜お土産リスト</title>
+<style>
+:root{
+  --bg:#eef1f2;
+  --paper:#ffffff;
+  --ink:#142433;
+  --muted:#6e7881;
+  --navy:#19354d;
+  --navy2:#274d67;
+  --gold:#a88958;
+  --sand:#f5f0e8;
+  --green:#45685b;
+  --line:#e1e6e9;
+  --soft:#f7f9fa;
+  --red:#8b5050;
+  --shadow:0 20px 60px rgba(26,45,60,.10);
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Yu Gothic UI","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+}
+.page{
+  max-width:1180px;margin:28px auto;background:var(--paper);box-shadow:var(--shadow);
+}
+.hero{
+  padding:42px 44px 34px;border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(circle at 86% 20%, rgba(168,137,88,.10), transparent 28%),
+    linear-gradient(135deg,#fff 0%,#fbfcfc 65%,#f3f5f6 100%);
+}
+.eyebrow{font-size:11px;letter-spacing:.18em;font-weight:900;color:var(--gold)}
+h1{font-size:38px;line-height:1.18;margin:8px 0 8px;letter-spacing:.02em}
+.lead{font-size:15px;color:var(--muted);line-height:1.75;max-width:850px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.badge{
+  border:1px solid var(--line);border-radius:999px;background:#fff;
+  padding:7px 11px;font-size:12px;font-weight:800;
+}
+.badge.dark{background:var(--navy);color:#fff;border-color:var(--navy)}
+.badge.gold{background:var(--sand);color:#735b39}
+main{padding:34px 38px 46px}
+.summary{
+  display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-bottom:30px;
+}
+.note{
+  border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--soft);
+}
+.note strong{display:block;font-size:14px;margin-bottom:7px}
+.note p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+.section{margin-top:34px}
+.section-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.section-head .num{
+  width:32px;height:32px;border-radius:50%;display:grid;place-items:center;
+  background:var(--navy);color:#fff;font-weight:900;font-size:13px;
+}
+.section-head h2{margin:0;font-size:25px}
+.section-head .sub{margin-left:auto;color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{
+  border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;
+  display:grid;grid-template-columns:190px 1fr;min-height:250px;
+}
+.card.priority{border-top:4px solid var(--navy)}
+.photo{
+  background:#e9edef;position:relative;overflow:hidden;min-height:250px;
+}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .fallback{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:22px;background:linear-gradient(135deg,#e9eef1,#f5f1ea);
+  color:#6b7580;font-weight:900;line-height:1.5;
+}
+.card-body{padding:18px 18px 16px}
+.topline{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rank{
+  display:inline-flex;align-items:center;justify-content:center;height:24px;
+  border-radius:999px;padding:0 9px;background:var(--sand);color:#715737;
+  font-size:11px;font-weight:900;
+}
+.area{
+  font-size:11px;font-weight:900;color:var(--navy2);letter-spacing:.05em;
+}
+.card h3{font-size:20px;margin:10px 0 4px}
+.shop{font-size:12px;color:var(--muted);font-weight:700;margin-bottom:12px}
+.desc{font-size:13px;line-height:1.7;color:#4f5f6b;margin:0 0 13px}
+.meta{
+  display:grid;grid-template-columns:84px 1fr;gap:6px 10px;
+  font-size:12px;line-height:1.5;margin:0;
+}
+.meta dt{color:#879098}.meta dd{margin:0;font-weight:750}
+.tip{
+  margin-top:13px;border-left:3px solid var(--gold);padding:9px 10px;
+  background:#fbf8f3;border-radius:0 8px 8px 0;font-size:12px;line-height:1.6;
+}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.btn{
+  display:inline-flex;align-items:center;text-decoration:none;border-radius:8px;
+  padding:8px 11px;font-size:11px;font-weight:900;color:#fff;background:var(--navy);
+}
+.btn.alt{background:#6d5739}
+.route{
+  border:1px solid var(--line);border-radius:15px;padding:20px;background:#fbfcfc;
+}
+.route-grid{
+  display:grid;grid-template-columns:1fr 45px 1fr 45px 1fr 45px 1fr;
+  align-items:center;gap:7px;
+}
+.stop{
+  min-height:100px;padding:13px;border:1px solid var(--line);border-radius:12px;
+  background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+}
+.stop strong{font-size:13px}.stop small{font-size:11px;line-height:1.55;color:var(--muted);margin-top:5px}
+.arrow{text-align:center;font-size:23px;color:#6f8291}
+.timing{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px;
+}
+.timing .t{
+  border:1px solid var(--line);border-radius:12px;padding:15px;background:var(--soft);
+}
+.timing strong{display:block;font-size:13px;margin-bottom:4px}.timing span{font-size:11px;line-height:1.55;color:var(--muted)}
+.compare{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px 14px;border-bottom:1px solid #edf0f2;text-align:left;font-size:12px;vertical-align:top}
+th{background:#f5f7f8;color:#52616d}
+tr:last-child td{border-bottom:none}
+.s{font-weight:900;color:var(--navy)}
+.warn{color:var(--red);font-weight:850}
+.sources{
+  margin-top:36px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted)
+}
+.sources h3{font-size:14px;color:var(--ink);margin:0 0 8px}
+.sources ul{padding-left:18px;margin:0}
+.sources li{font-size:11px;line-height:1.7;margin:4px 0}
+.sources a{color:#506d81}
+footer{
+  border-top:1px solid var(--line);padding:22px 38px 28px;
+  color:#929ba2;font-size:11px;display:flex;justify-content:space-between;gap:14px;
+}
+
+.quality-box{
+  border:1px solid var(--line);border-radius:15px;padding:18px 20px;
+  background:linear-gradient(135deg,#f7faf9,#fbf8f3);margin-bottom:18px;
+}
+.quality-box h3{margin:0 0 8px;font-size:17px}
+.quality-box p{margin:0;color:#53616c;font-size:13px;line-height:1.75}
+.eat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.eat-card{border:1px solid var(--line);border-radius:15px;overflow:hidden;background:#fff}
+.eat-photo{height:210px;background:#eef1f2;overflow:hidden}
+.eat-photo img{width:100%;height:100%;object-fit:cover}
+.eat-body{padding:16px}
+.eat-body h3{margin:7px 0 5px;font-size:19px}
+.eat-body p{margin:0 0 10px;font-size:12px;color:#58656f;line-height:1.65}
+.eat-meta{font-size:11px;line-height:1.7;color:#66737d}
+.eat-meta b{color:var(--ink)}
+.newmark{background:#eaf1ee!important;color:#36584c!important}
+
+@media(max-width:900px){
+  .page{margin:0}.hero{padding:34px 20px 28px}h1{font-size:30px}
+  main{padding:24px 16px 38px}.summary,.grid,.eat-grid{grid-template-columns:1fr}
+  .card{grid-template-columns:130px 1fr}.photo{min-height:100%}
+  .route-grid{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}
+  .timing{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .card{grid-template-columns:1fr}.photo{height:210px}.timing{grid-template-columns:1fr}
+}
+@media print{
+  body{background:#fff}.page{margin:0;box-shadow:none;max-width:none}
+  .card,.route,.compare{break-inside:avoid}
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  document.querySelectorAll(".photo img").forEach(img=>{
+    img.addEventListener("error",()=>{
+      img.style.display="none";
+      const f=img.parentElement.querySelector(".fallback");
+      if(f) f.style.display="flex";
+    });
+  });
+});
+</script>
+</head>
+<body>
+<div class="page">
+<header class="hero">
+  <div class="eyebrow">MIYAZAKI GOLF TRIP / SOUVENIR GUIDE</div>
+  <h1>宮崎ゴルフ旅行｜お土産リスト</h1>
+  <div class="lead">
+    宮崎市2泊・都城市1泊、車移動を前提にした「わざわざ店まで行く価値がある」お土産を選定。今回は追加調査として、地鶏炭火焼・辛麺・チキン南蛮まで本格的に反映し、現地で食べるべき店と、持ち帰るべき商品を分けて整理しています。
+  </div>
+  <div class="badges">
+    <span class="badge dark">厳選13候補</span>
+    <span class="badge gold">現地実食3店も掲載</span>
+    <span class="badge">車移動向け</span>
+    <span class="badge">生菓子は購入日を指定</span>
+    <span class="badge">2026年10月確認</span>
+  </div>
+</header>
+
+<main>
+<div class="summary">
+  <div class="note">
+    <strong>今回の最重要追加</strong>
+    <p><b>地鶏炭火焼は「みやざき地頭鶏」を使っているかで質が大きく変わります。</b>
+    一般的な鶏炭火焼パウチではなく、都城の生産直売所「鶏愛」を優先。
+    辛麺は桝元、チキン南蛮はおぐらで現地実食し、持ち帰りはヤマエ・戸村のたれ類を中心にする構成へ更新しました。</p>
+  </div>
+  <div class="note">
+    <strong>持ち帰りの考え方</strong>
+    <p>常温品は早めに買ってOK。<b>わらべは要冷蔵3日</b>、<b>鯨ようかんは当日中推奨</b>。
+    鶏愛の炭火焼は常温レトルト品なら製造日から3か月、妻地鶏チキン南蛮は冷凍品のため保冷環境がある場合だけ候補にします。</p>
+  </div>
+</div>
+
+<section class="section">
+<div class="section-head"><div class="num">1</div><h2>宮崎市｜本命</h2><div class="sub">店まで行く価値が高い順</div></div>
+<div class="grid">
+
+<article class="card priority">
+  <div class="photo">
+    <img src="https://stat.ameba.jp/user_images/20210410/16/atelier-saku/ec/f5/j/o2553191514924162006.jpg" alt="わらべ チーズ饅頭">
+    <div class="fallback" style="display:none">わらべ<br>チーズ饅頭</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank">S+ 最優先</span><span class="area">宮崎市</span></div>
+    <h3>チーズ饅頭</h3>
+    <div class="shop">菓子処 わらべ</div>
+    <p class="desc">宮崎のチーズ饅頭で最優先。手作り・地方発送なし・売切れあり。レビューでも「チーズ饅頭ではNo.1」といった強い支持が続く、今回の“現地まで行く意味”が最も大きい商品。</p>
+    <dl class="meta">
+      <dt>価格</dt><dd>1個 200円 / 10個袋 2,000円 / 10個箱 2,120円</dd>
+      <dt>保存</dt><dd>要冷蔵・消費期限3日</dd>
+      <dt>営業時間</dt><dd>9:00–17:30</dd>
+      <dt>定休日</dt><dd>日曜＋臨時休あり</dd>
+      <dt>住所</dt><dd>宮崎市大王町38-1</dd>
+      <dt>支払い</dt><dd>現金のみ</dd>
+    </dl>
+    <div class="tip"><b>買い方：</b>前日までに電話予約推奨。旅行後半に受け取る。保冷バッグ必須。</div>
+    <div class="actions">
+      <a class="btn" href="https://spxc4wf9.wixsite.com/website" target="_blank">公式</a>
+      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=菓子処わらべ+宮崎市大王町38-1" target="_blank">地図</a>
+    </div>
+  </div>
+</article>
+
+<article class="card priority">
+  <div class="photo">
+    <img src="https://furusato.jreast.co.jp/html/upload/save_image/shop/17584/product/212276/image_2.jpg" alt="鯨ようかん">
+    <div class="fallback" style="display:none">佐土原銘菓<br>鯨ようかん</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank">S 現地感</span><span class="area">宮崎市・佐土原</span></div>
+    <h3>鯨ようかん</h3>
+    <div class="shop">阪本商店</div>
+    <p class="desc">江戸時代から佐土原に伝わる郷土菓子。米粉の餅生地とこしあんで作る、生菓子ならではの素朴な味。市公式でも、地元客が次々に買いに来て売れていく店として紹介されています。</p>
+    <dl class="meta">
+      <dt>参考価格</dt><dd>5個 420円（2025年2月取材時）</dd>
+      <dt>保存</dt><dd>生菓子・当日中に食べるのがおすすめ</dd>
+      <dt>営業時間</dt><dd>8:00〜売切れまで</dd>
+      <dt>定休日</dt><dd>不定休</dd>
+      <dt>住所</dt><dd>宮崎市佐土原町上田島38-1</dd>
+    </dl>
+    <div class="tip"><b>買い方：</b>前日予約推奨。家に持ち帰る土産というより、旅行中・帰宅日の家族用に向く。</div>
+    <div class="actions">
+      <a class="btn" href="https://www.city.miyazaki.miyazaki.jp/miyazaki-shokudo/morning/kujirayoukan.html" target="_blank">宮崎市紹介</a>
+      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=阪本商店+鯨ようかん+宮崎市佐土原町上田島38-1" target="_blank">地図</a>
+    </div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img src="https://meitenbanzai.com/photo/56/item/1/pho.jpg" alt="なんじゃこら大福">
+    <div class="fallback" style="display:none">お菓子の日高<br>なんじゃこら大福</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank">S 王道</span><span class="area">宮崎市中心部</span></div>
+    <h3>なんじゃこら大福</h3>
+    <div class="shop">お菓子の日高 本店</div>
+    <p class="desc">苺・栗・クリームチーズを一つの大福に入れた宮崎の看板菓子。約30年続くロングセラーで、レビュー母数も大きく「宮崎に来た感」が分かりやすい。</p>
+    <dl class="meta">
+      <dt>価格</dt><dd>2個入 1,360円（公式オンライン価格）</dd>
+      <dt>内容</dt><dd>苺・栗・クリームチーズ・粒あん</dd>
+      <dt>営業時間</dt><dd>9:00–21:00</dd>
+      <dt>定休日</dt><dd>年中無休（元旦除く案内あり）</dd>
+      <dt>住所</dt><dd>宮崎市橘通西2-7-25</dd>
+      <dt>駐車</dt><dd>隣接パーキング1時間無料の掲載あり</dd>
+    </dl>
+    <div class="tip"><b>おすすめ：</b>大量配布より、自宅・家族・旅行中に楽しむ商品。夜21時まで寄れるのも強い。</div>
+    <div class="actions">
+      <a class="btn" href="https://www.okashinohidaka.com/" target="_blank">公式</a>
+      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=お菓子の日高本店+宮崎市橘通西2-7-25" target="_blank">地図</a>
+    </div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img src="https://item-shopping.c.yimg.jp/i/n/wagashi-mall-kyushu_mu-aa2" alt="青島ういろう">
+    <div class="fallback" style="display:none">三松<br>青島ういろう</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank">B+ 追加候補</span><span class="area">宮崎市</span></div>
+    <h3>青島ういろう</h3>
+    <div class="shop">三松宇いろう本店</div>
+    <p class="desc">米粉と砂糖で作る宮崎・青島の昔ながらの銘菓。現地限定性はわらべほど強くありませんが、宮崎らしい郷土菓子として安定。常温で持ち帰れるのも便利。</p>
+    <dl class="meta">
+      <dt>価格</dt><dd>白・黒 各5切 650円 / 日向夏10切 700円</dd>
+      <dt>保存</dt><dd>常温</dd>
+      <dt>住所</dt><dd>宮崎市東大淀2-1-35</dd>
+      <dt>特徴</dt><dd>無添加・真空包装</dd>
+    </dl>
+    <div class="tip"><b>位置づけ：</b>青島方面を通る、または常温の宮崎銘菓を追加したい時に。</div>
+    <div class="actions">
+      <a class="btn" href="https://mimatsu-uirou.com/" target="_blank">公式</a>
+      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=三松宇いろう本店+宮崎市東大淀2-1-35" target="_blank">地図</a>
+    </div>
+  </div>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">2</div><h2>都城市｜本命</h2><div class="sub">肉と焼酎の土地らしさを優先</div></div>
+<div class="grid">
+
+<article class="card priority">
+  <div class="photo">
+    <img src="https://item-shopping.c.yimg.jp/i/n/hihshop_329999994571434500016" alt="極上スパイス 喜">
+    <div class="fallback" style="display:none">肉のふくしま<br>極上スパイス 喜</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank">S+ 最優先</span><span class="area">都城市</span></div>
+    <h3>極上スパイス 喜</h3>
+    <div class="shop">肉のふくしま</div>
+    <p class="desc">明治40年創業の精肉店が作る万能スパイス。肉だけでなく、炒飯・唐揚げ・サラダにも使える。レビューではリピート利用が目立ち、実用性の高い“地元土産”として非常に強い。</p>
+    <dl class="meta">
+      <dt>参考価格</dt><dd>80g 約700円前後（販売店で差あり）</dd>
+      <dt>保存</dt><dd>常温 / 賞味期限目安365日</dd>
+      <dt>営業時間</dt><dd>9:00–18:00〜18:15掲載</dd>
+      <dt>定休日</dt><dd>日曜・祝日</dd>
+      <dt>住所</dt><dd>都城市上町10-22</dd>
+      <dt>駐車</dt><dd>あり</dd>
+    </dl>
+    <div class="tip"><b>おすすめ購入量：</b>自宅用＋配布用で2〜3本。軽くて日持ちするので最も買いやすい。</div>
+    <div class="actions">
+      <a class="btn" href="https://nikunofukushima.com" target="_blank">公式</a>
+      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=肉のふくしま+都城市上町10-22" target="_blank">地図</a>
+    </div>
+  </div>
+</article>
+
+<article class="card priority">
+  <div class="photo">
+    <img src="https://tblg.k-img.com/restaurant/images/Rvw/206587/640x640_rect_13b9d41fa6e3c49e07d7176edb304997.jpg" alt="黒霧島MELT">
+    <div class="fallback" style="display:none">霧島酒造<br>直営限定・プレミアム</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank">S+ 都城必須</span><span class="area">都城市</span></div>
+    <h3>直営限定酒 / 黒霧島MELT</h3>
+    <div class="shop">焼酎の里 霧島ファクトリーガーデン ショップ</div>
+    <p class="desc">普通の黒霧島を買うのではなく、直営限定750ml瓶やプレミアム系を狙う場所。現地の直営ショップで選ぶこと自体が都城土産として成立します。</p>
+    <dl class="meta">
+      <dt>候補①</dt><dd>直営店限定黒霧島 750ml</dd>
+      <dt>候補②</dt><dd>黒霧島MELT 720ml・30% / 希望小売 4,545円税別</dd>
+      <dt>セット例</dt><dd>金霧島＋直営店限定黒霧島 5,200円税込</dd>
+      <dt>営業時間</dt><dd>ショップ 9:00–18:30</dd>
+      <dt>住所</dt><dd>都城市志比田町5480</dd>
+      <dt>駐車</dt><dd>大規模駐車場あり</dd>
+    </dl>
+    <div class="tip"><b>買い方：</b>酒好きへの土産なら最優先。運転者は試飲不可。限定醸造ビールが出ていれば現地で確認。</div>
+    <div class="actions">
+      <a class="btn" href="https://www.kirishima-fg.jp/" target="_blank">公式</a>
+      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=焼酎の里+霧島ファクトリーガーデン+都城市志比田町5480" target="_blank">地図</a>
+    </div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img src="https://tblg.k-img.com/restaurant/images/Rvw/136666/640x640_rect_136666851.jpg" alt="稲谷製菓 酒まんじゅう">
+    <div class="fallback" style="display:none">稲谷製菓<br>酒まんじゅう</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank">A+ 地元枠</span><span class="area">都城市</span></div>
+    <h3>酒まんじゅう</h3>
+    <div class="shop">稲谷製菓</div>
+    <p class="desc">創業昭和32年。観光土産というより、地元の手土産として根付く店。Yahoo!マップでは4.39・32件規模で「手みやげに最適」の声が多く、リピーターによる高評価も確認できます。</p>
+    <dl class="meta">
+      <dt>参考価格</dt><dd>酒万十（白）140円の2026年口コミあり</dd>
+      <dt>定休日</dt><dd>日曜</dd>
+      <dt>電話</dt><dd>0986-22-3671</dd>
+      <dt>特徴</dt><dd>出来たてを店内で食べられる案内あり</dd>
+    </dl>
+    <div class="tip"><b>おすすめ：</b>配る観光土産より、都城らしい地元の日常菓子を買いたい人向け。自分用に温かい1個を食べる価値あり。</div>
+    <div class="actions">
+      <a class="btn" href="https://pokemiya.com/inataniseika/" target="_blank">店舗紹介</a>
+      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=稲谷製菓+都城市" target="_blank">地図</a>
+    </div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img src="https://baseec-img-mng.akamaized.net/images/item/origin/04b7ece16218bb895dc476be82983b18.jpg" alt="九州純バタークッキー">
+    <div class="fallback" style="display:none">昭栄堂<br>九州純バタークッキー</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank">A 常温ギフト</span><span class="area">都城市</span></div>
+    <h3>九州純バタークッキー</h3>
+    <div class="shop">昭栄堂 本店</div>
+    <p class="desc">明治34年創業。宮崎県産高千穂バターと九州素材を使った、ザクほろ食感のクッキー。生菓子が多い今回のラインナップに、日持ちするギフト枠として加えるのにちょうど良い。</p>
+    <dl class="meta">
+      <dt>価格</dt><dd>袋 630円 / 140g缶 1,600円</dd>
+      <dt>営業時間</dt><dd>9:00–19:30掲載</dd>
+      <dt>住所</dt><dd>都城市甲斐元町1-28</dd>
+      <dt>レビュー</dt><dd>Yahoo!マップ 4.15・33件規模</dd>
+      <dt>駐車</dt><dd>あり</dd>
+    </dl>
+    <div class="tip"><b>用途：</b>職場・知人向け、または生菓子を避けたい相手へ。都城での追加購入候補。</div>
+    <div class="actions">
+      <a class="btn" href="https://www.shoeido-shop.com/" target="_blank">公式</a>
+      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=昭栄堂本店+都城市甲斐元町1-28" target="_blank">地図</a>
+    </div>
+  </div>
+</article>
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="section-head"><div class="num">3</div><h2>追加調査｜地鶏・辛麺・チキン南蛮</h2><div class="sub">今回の更新で正式追加</div></div>
+
+<div class="quality-box">
+  <h3>地鶏炭火焼は「何の鶏か」を確認</h3>
+  <p>宮崎土産には「鶏炭火焼」が多数ありますが、品質重視なら
+  <b>地域団体商標のみやざき地頭鶏</b>を使用した商品を優先。
+  鶏愛は霧島山麓8,000㎡の農場で生産から処理・加工・販売まで手掛ける直売所で、
+  今回の車移動旅行との相性が非常に良い候補です。</p>
+</div>
+
+<div class="grid">
+
+<article class="card priority">
+  <div class="photo">
+    <img src="https://food.itembox.design/product/000/000000000018/000000000018-02-m.jpg?t=20260130094836" alt="みやざき地頭鶏 炭火焼">
+    <div class="fallback" style="display:none">鶏愛<br>みやざき地頭鶏 炭火焼</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank newmark">S+ 新規本命</span><span class="area">都城市</span></div>
+    <h3>みやざき地頭鶏 炭火焼</h3>
+    <div class="shop">みやざき地頭鶏直売店 鶏愛</div>
+    <p class="desc">一般的な宮崎鶏炭火焼ではなく、県ブランド「みやざき地頭鶏」を生産直売で買う候補。自社農場・自社処理場を持ち、生産から加工販売まで一貫している点を高く評価。</p>
+    <dl class="meta">
+      <dt>内容量</dt><dd>もも・胸肉 150g</dd>
+      <dt>保存</dt><dd>常温レトルト：製造日より3か月</dd>
+      <dt>価格</dt><dd>店頭確認</dd>
+      <dt>営業時間</dt><dd>10:30–18:00</dd>
+      <dt>店休日</dt><dd>日曜・月曜の祝日</dd>
+      <dt>住所</dt><dd>都城市山田町山田4645-1</dd>
+    </dl>
+    <div class="tip"><b>今回の評価：</b>炭火焼土産はまずここ。普通のパウチ品を量販店で選ぶより、旅行の価値が残る。</div>
+    <div class="actions">
+      <a class="btn" href="https://miyazaki-keiai.com/" target="_blank">公式</a>
+      <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=みやざき地頭鶏直売店+鶏愛+都城市山田町山田4645-1" target="_blank">地図</a>
+    </div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img src="https://shopping.c.yimg.jp/lib/macaron0120/a-iw-078-1_g1.jpg" alt="桝元 黒辛">
+    <div class="fallback" style="display:none">桝元<br>黒辛 生麺</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank newmark">A+ 新規追加</span><span class="area">宮崎</span></div>
+    <h3>黒辛（元祖辛麺）</h3>
+    <div class="shop">元祖辛麺屋 桝元</div>
+    <p class="desc">現地で桝元を食べて気に入ったら買う自宅用。通販でも買えるため限定性は低い一方、宮崎辛麺の基準をそのまま持ち帰れる再現性の高さが魅力。</p>
+    <dl class="meta">
+      <dt>価格</dt><dd>1食 680円（税込・公式オンライン現行表示）</dd>
+      <dt>種類</dt><dd>黒辛 / 赤辛 / トマト / 白 / 味噌など</dd>
+      <dt>位置づけ</dt><dd>味の再現性◎・現地限定性△</dd>
+    </dl>
+    <div class="tip"><b>買い方：</b>最初は黒辛。辛さが得意なら赤辛も追加。現地実食後に判断するのが一番合理的。</div>
+    <div class="actions">
+      <a class="btn" href="https://karamenmasumoto.shop-pro.jp/" target="_blank">公式通販</a>
+    </div>
+  </div>
+</article>
+
+<article class="card priority">
+  <div class="photo">
+    <img src="https://shop.r10s.jp/sinhatu/cabinet/biiino/item/main-image/taru.jpg" alt="ヤマエ チキン南蛮のたれ 宮崎タルタルソース">
+    <div class="fallback" style="display:none">ヤマエ食品<br>チキン南蛮セット</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank newmark">A+ 新規本命</span><span class="area">都城市メーカー</span></div>
+    <h3>チキン南蛮のたれ＋宮崎タルタル</h3>
+    <div class="shop">ヤマエ食品工業</div>
+    <p class="desc">完成品を持ち帰るより、自宅で本場型を再現するための組み合わせ。都城企業の商品で、旅行先とのつながりも明確。甘酢とタルタルをセットで買うのが前提。</p>
+    <dl class="meta">
+      <dt>南蛮たれ</dt><dd>150ml・302円・開栓前賞味270日</dd>
+      <dt>タルタル</dt><dd>180g・475円・開栓前賞味180日</dd>
+      <dt>合計</dt><dd>777円（税込希望小売価格ベース）</dd>
+      <dt>使い方</dt><dd>揚げたての鶏を甘酢へ → タルタル</dd>
+    </dl>
+    <div class="tip"><b>今回の評価：</b>チキン南蛮土産では最も扱いやすい。都城らしさ・価格・再現性のバランスが良い。</div>
+    <div class="actions">
+      <a class="btn" href="https://yamae-foods.net/item/755/" target="_blank">南蛮たれ</a>
+      <a class="btn" href="https://yamae-foods.net/item/2044/" target="_blank">タルタル</a>
+    </div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <img src="https://tomurahonten.com/img/goods/L/tf4950268006077cn_a31e129382d24ee7b2d7b14b7db730e0.jpg" alt="戸村本店 チキン南蛮のたれ">
+    <div class="fallback" style="display:none">戸村本店<br>チキン南蛮のたれ</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank newmark">A 地元スーパー枠</span><span class="area">宮崎県</span></div>
+    <h3>手作り チキン南蛮のたれ</h3>
+    <div class="shop">戸村本店</div>
+    <p class="desc">公式自身が「宮崎のお土産に買っていく人が多く、スーパーでも大人気」と案内するローカル調味料。観光用ギフトより、宮崎県民の日常感を持ち帰る商品。</p>
+    <dl class="meta">
+      <dt>価格</dt><dd>400g 510円（税込）</dd>
+      <dt>賞味期限</dt><dd>製造から240日</dd>
+      <dt>保存</dt><dd>常温・開栓後要冷蔵</dd>
+      <dt>特徴</dt><dd>酢・醤油・砂糖・玉ねぎ・レモン・香辛料</dd>
+    </dl>
+    <div class="tip"><b>ヤマエとの違い：</b>ヤマエ＝都城＆再現セット、戸村＝宮崎の地元スーパー文化。両方買って比較しても面白い。</div>
+    <div class="actions">
+      <a class="btn" href="https://tomurahonten.com/shop/g/gTF4950268006077CN/" target="_blank">公式</a>
+    </div>
+  </div>
+</article>
+
+<article class="card">
+  <div class="photo">
+    <div class="fallback" style="display:flex">妻地鶏<br>チキン南蛮<br>冷凍190g</div>
+  </div>
+  <div class="card-body">
+    <div class="topline"><span class="rank">B+ 冷凍オプション</span><span class="area">都城市</span></div>
+    <h3>妻地鶏 チキン南蛮 190g</h3>
+    <div class="shop">宮崎 妻地鶏ファーム</div>
+    <p class="desc">完成品を持ち帰りたい場合の候補。チキン・甘酢・タルタル入りで温めるだけ。味の面では面白いものの、3泊4日の車旅行では冷凍維持が必要なため優先順位は下げます。</p>
+    <dl class="meta">
+      <dt>価格</dt><dd>920円（税込）</dd>
+      <dt>内容量</dt><dd>190g</dd>
+      <dt>保存</dt><dd>冷凍</dd>
+      <dt>賞味期限</dt><dd>冷凍：製造日より270日</dd>
+    </dl>
+    <div class="tip"><b>条件付き：</b>クーラーボックス等で冷凍状態を維持できる場合のみ。通常はヤマエのたれセットを優先。</div>
+    <div class="actions">
+      <a class="btn" href="https://www.tsumajidori.com/c/single/gd13" target="_blank">公式</a>
+    </div>
+  </div>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">4</div><h2>お土産ではないが、宮崎で食べるべき3店</h2><div class="sub">今回の追加リサーチ結論</div></div>
+
+<div class="eat-grid">
+
+<article class="eat-card">
+  <div class="eat-photo"><img src="https://livedoor.blogimg.jp/drkgw2012-gourmet_travelogue/imgs/d/b/db0cbb27-s.jpg" alt="丸万焼鳥 本店 もも焼き"></div>
+  <div class="eat-body">
+    <span class="rank">炭火焼 S+</span>
+    <h3>丸万焼鳥 本店</h3>
+    <p>昭和29年創業。宮崎市観光公式が「元祖もも焼き」と紹介。骨付き肉を備長炭の強火で一気に焼き、炭香と肉の旨みを味わう店。</p>
+    <div class="eat-meta"><b>営業時間：</b>17:00–22:00／売切れ次第終了<br>
+    <b>休み：</b>日曜　<b>予約：</b>不可<br>
+    <b>住所：</b>宮崎市橘通西3-6-7</div>
+  </div>
+</article>
+
+<article class="eat-card">
+  <div class="eat-photo"><img src="https://ximg.retty.me/crop/s400x400/q80/das/-/retty/img_repo/2l/01/38612168.jpg" alt="おぐら本店 チキン南蛮"></div>
+  <div class="eat-body">
+    <span class="rank">チキン南蛮 S+</span>
+    <h3>おぐら本店</h3>
+    <p>1956年創業。現在全国でイメージされる「甘酢＋たっぷりタルタル」の宮崎チキン南蛮を体験するなら最優先。</p>
+    <div class="eat-meta"><b>営業時間：</b>11:00–LO14:30 / 17:00–LO19:50<br>
+    <b>休み：</b>火曜・第1/3水曜（祝日の場合翌日）<br>
+    <b>住所：</b>宮崎市橘通東3-4-24</div>
+  </div>
+</article>
+
+<article class="eat-card">
+  <div class="eat-photo"><img src="https://tblg.k-img.com/resize/640x640c/restaurant/images/Rvw/227015/4fe5486d2a18fc8a1534429324be1403.jpg?api=v2&token=fcc3d8a" alt="桝元 宮崎本店 元祖辛麺"></div>
+  <div class="eat-body">
+    <span class="rank">辛麺 S</span>
+    <h3>辛麺屋 桝元 宮崎本店</h3>
+    <p>宮崎辛麺の基準店。初回は元祖辛麺・こんにゃく麺を軸に、辛さは好みに合わせて。現地で食べてから黒辛の土産を買う流れが最も合理的。</p>
+    <div class="eat-meta"><b>営業時間：</b>月〜木・日 11:00–22:00 / 金・土 11:00–23:00<br>
+    <b>定休日：</b>掲載上なし　<b>駐車場：</b>44台<br>
+    <b>住所：</b>宮崎市新別府町土田174-1</div>
+  </div>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">5</div><h2>買い方の順番</h2><div class="sub">車移動・3泊4日向け</div></div>
+<div class="route">
+  <div class="route-grid">
+    <div class="stop"><strong>都城滞在日</strong><small>鶏愛 炭火焼<br>喜スパイス<br>霧島酒造<br>ヤマエ</small></div>
+    <div class="arrow">→</div>
+    <div class="stop"><strong>宮崎市滞在中</strong><small>丸万 / おぐら / 桝元で実食<br>日高<br>青島ういろう</small></div>
+    <div class="arrow">→</div>
+    <div class="stop"><strong>旅行後半</strong><small>わらべ<br>前日までに予約</small></div>
+    <div class="arrow">→</div>
+    <div class="stop"><strong>帰宅日近く</strong><small>阪本商店<br>鯨ようかん<br>当日中推奨</small></div>
+  </div>
+  <div class="timing">
+    <div class="t"><strong>常温・早めに購入OK</strong><span>鶏愛レトルト炭火焼 / 喜スパイス / 焼酎 / ヤマエ / 戸村 / 桝元黒辛 / 昭栄堂</span></div>
+    <div class="t"><strong>旅行後半に買う</strong><span>わらべ チーズ饅頭</span></div>
+    <div class="t"><strong>当日食べる</strong><span>阪本商店 鯨ようかん</span></div>
+    <div class="t"><strong>保冷バッグ推奨</strong><span>わらべ / なんじゃこら大福など生菓子</span></div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head"><div class="num">6</div><h2>最終優先順位</h2><div class="sub">時間が足りない場合は上から</div></div>
+<div class="compare">
+<table>
+<thead><tr><th>順位</th><th>商品</th><th>現地限定性</th><th>地元支持</th><th>持ち帰り</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td class="s">1</td><td><b>わらべ チーズ饅頭</b></td><td>◎ 地方発送なし</td><td>◎</td><td class="warn">△ 要冷蔵3日</td><td>家族・自宅</td></tr>
+<tr><td class="s">2</td><td><b>鶏愛 みやざき地頭鶏 炭火焼</b></td><td>◎ 生産直売</td><td>◎</td><td>◎ 常温レトルトあり</td><td>自宅・酒のつまみ</td></tr>
+<tr><td class="s">3</td><td><b>霧島酒造 直営限定酒</b></td><td>◎ 直営ならでは</td><td>◎</td><td>○ 重い</td><td>自分・酒好き</td></tr>
+<tr><td class="s">4</td><td><b>極上スパイス 喜</b></td><td>○ 都城発</td><td>◎</td><td>◎ 常温・軽い</td><td>自宅・配布</td></tr>
+<tr><td class="s">5</td><td><b>ヤマエ チキン南蛮たれ＋タルタル</b></td><td>○ 都城企業</td><td>○〜◎</td><td>◎ 常温</td><td>自宅・料理好き</td></tr>
+<tr><td class="s">6</td><td><b>阪本商店 鯨ようかん</b></td><td>◎ 佐土原郷土菓子</td><td>◎</td><td class="warn">△ 当日推奨</td><td>旅行中・家族</td></tr>
+<tr><td class="s">7</td><td><b>桝元 黒辛</b></td><td>△ 通販可</td><td>◎</td><td>◎</td><td>自宅・辛党</td></tr>
+<tr><td class="s">8</td><td><b>なんじゃこら大福</b></td><td>○ 宮崎名物</td><td>◎</td><td>△ 生菓子</td><td>家族・自分</td></tr>
+<tr><td>9</td><td>戸村本店 チキン南蛮のたれ</td><td>○ 地元スーパー文化</td><td>◎</td><td>◎ 常温</td><td>自宅・比較用</td></tr>
+<tr><td>10</td><td>稲谷製菓 酒まんじゅう</td><td>○ 地元店</td><td>◎</td><td>○</td><td>手土産・自分</td></tr>
+<tr><td>11</td><td>昭栄堂 九州純バタークッキー</td><td>○ 都城老舗</td><td>○</td><td>◎</td><td>職場・知人</td></tr>
+<tr><td>12</td><td>三松 青島ういろう</td><td>△ 県内流通あり</td><td>○</td><td>◎</td><td>宮崎定番</td></tr>
+<tr><td>13</td><td>妻地鶏 チキン南蛮</td><td>○ 地元商品</td><td>○</td><td class="warn">△ 冷凍必須</td><td>保冷環境がある場合</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="sources">
+<h3>情報確認元</h3>
+<ul>
+  <li><a href="https://spxc4wf9.wixsite.com/website" target="_blank">菓子処わらべ公式</a> — 価格、要冷蔵3日、地方発送なし、営業時間、予約推奨</li>
+  <li><a href="https://www.city.miyazaki.miyazaki.jp/miyazaki-shokudo/morning/kujirayoukan.html" target="_blank">宮崎市「宮崎食堂」</a> — 阪本商店、鯨ようかんの製法、地元支持、営業時間、予約推奨</li>
+  <li><a href="https://www.okashinohidaka.com/" target="_blank">お菓子の日高公式</a> — なんじゃこら大福の商品内容・公式価格</li>
+  <li><a href="https://mimatsu-uirou.com/" target="_blank">三松ういろう公式</a> — 商品価格・常温保存</li>
+  <li><a href="https://www.city.miyakonojo.miyazaki.jp/soshiki/3/3775.html" target="_blank">都城市公式</a> — 肉のふくしま・スパイス喜</li>
+  <li><a href="https://www.kirishima-fg.jp/" target="_blank">霧島ファクトリーガーデン公式</a> / <a href="https://www.kirishima.co.jp/" target="_blank">霧島酒造公式</a> — 直営商品・価格・ショップ情報</li>
+  <li><a href="https://pokemiya.com/inataniseika/" target="_blank">稲谷製菓 店舗紹介</a> / 2026年口コミ — 酒まんじゅう・地元支持</li>
+  <li><a href="https://www.shoeido-shop.com/" target="_blank">昭栄堂公式</a> — 九州純バタークッキー価格</li>
+  <li><a href="https://miyazaki-keiai.com/product/" target="_blank">株式会社鶏愛 公式</a> / <a href="https://www.mjitokko.jp/restaurant/detail.php?id=1608001026" target="_blank">みやざき地頭鶏事業協同組合</a> — 炭火焼150g、保存、直売店情報</li>
+  <li><a href="https://karamenmasumoto.shop-pro.jp/" target="_blank">辛麺屋桝元 公式オンラインショップ</a> — 黒辛ほか現行価格</li>
+  <li><a href="https://yamae-foods.net/item/755/" target="_blank">ヤマエ食品 チキン南蛮のたれ</a> / <a href="https://yamae-foods.net/item/2044/" target="_blank">宮崎タルタルソース</a> — 価格・賞味期限</li>
+  <li><a href="https://tomurahonten.com/shop/g/gTF4950268006077CN/" target="_blank">戸村本店公式</a> — チキン南蛮のたれ400g・510円</li>
+  <li><a href="https://www.tsumajidori.com/c/single/gd13" target="_blank">妻地鶏ファーム公式</a> — チキン南蛮190g・920円・冷凍270日</li>
+  <li><a href="https://www.miyazaki-city.tourism.or.jp/gourmet/10141" target="_blank">宮崎市観光公式・丸万焼鳥本店</a> — 元祖もも焼き、営業時間、日曜休</li>
+  <li><a href="https://www.miyazaki-city.tourism.or.jp/feature/chicken_nanban" target="_blank">宮崎市観光公式・チキン南蛮特集</a> — おぐら本店の歴史・営業時間</li>
+  <li><a href="https://www.karamenya-masumoto.com/" target="_blank">辛麺屋桝元公式</a> — 元祖辛麺の内容</li>
+</ul>
+</section>
+
+</main>
+<footer>
+  <span>宮崎市2泊・都城市1泊 / 車移動</span>
+  <span>Souvenir shortlist / researched Oct. 2026</span>
+</footer>
+</div>
+</body>
+</html>
